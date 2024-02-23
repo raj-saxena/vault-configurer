@@ -1,0 +1,13 @@
+spring:
+  config:
+    import: vault://
+  application:
+    name: my-app
+  profiles:
+    active: dev
+  cloud.vault:
+    enabled: true
+    kv:
+      enabled: true
+      application-name: ${spring.application.name}
+      default-context: ${spring.application.name}
