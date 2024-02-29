@@ -9,5 +9,3 @@ spring:
     enabled: true
     kv:
       enabled: true
-      application-name: ${spring.application.name}
-      default-context: ${spring.application.name}
